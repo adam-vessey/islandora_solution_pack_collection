@@ -47,7 +47,8 @@ function islandora_basic_collection_object_count_listing_content() {
  *   The ID to use for the object count block.
  */
 function islandora_basic_collection_get_object_count_block_cache_id() {
-  $block = block_load('islandora_basic_collection', 'collection_object_count');
+  // TODO: Fix things here.
+  $block = layout_get_block_info('islandora_basic_collection', 'collection_object_count');
 
   $cid_parts[] = $block->module;
   $cid_parts[] = $block->delta;
@@ -60,7 +61,8 @@ function islandora_basic_collection_get_object_count_block_cache_id() {
  * Clear the cache of content for the object count block.
  */
 function islandora_basic_collection_clear_object_count_cache() {
-  $block = block_load('islandora_basic_collection', 'collection_object_count');
+  // TODO: Fix things here.
+  $block = layout_get_block_info('islandora_basic_collection', 'collection_object_count');
 
   $cid_parts[] = $block->module;
   $cid_parts[] = $block->delta;

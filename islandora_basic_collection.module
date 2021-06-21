@@ -1276,3 +1276,14 @@ function islandora_basic_collection_islandora_solution_pack_child_relationships(
     );
   }
 }
+
+/**
+ * Implements hook_autoload_info().
+ *
+ * Backdrop compatibility.
+ */
+function islandora_basic_collection_autoload_info() {
+  return array(
+    'CollectionPolicy' => 'includes/collection_policy.inc',
+  );
+}
